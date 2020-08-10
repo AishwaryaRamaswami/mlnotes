@@ -12,12 +12,93 @@
     
     
     <item>
-      <title>Scipy-notes</title>
-      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/matplotlib/</link>
+      <title>Confusion_Matrix</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/confusion_matrix/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/matplotlib/</guid>
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/confusion_matrix/</guid>
+      <description>from sklearn.metrics import confusion_matrixC = &amp;#34;Cat&amp;#34; A = &amp;#34;Ant&amp;#34; B = &amp;#34;Bird&amp;#34;true = [C, A, C, C, A, B] pred = [A, A, C, C, A, C]confusion_matrix(true, pred, labels=[A, B, C]) array([[2, 0, 0], [0, 0, 1], [1, 0, 2]])  </description>
+    </item>
+    
+    <item>
+      <title>Encoding</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/encoding/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/encoding/</guid>
+      <description>import pandas as pdlist1 = [&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;A&amp;#39;,&amp;#39;C&amp;#39;] df=pd.DataFrame(list1,columns={&amp;#39;Values&amp;#39;}) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }    Values     0 A   1 B   2 B   3 A   4 C     from sklearn import preprocessing encode = preprocessing.LabelEncoder() df[&amp;#39;Encoded_Value&amp;#39;] = encode.</description>
+    </item>
+    
+    <item>
+      <title>F1-Score</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/f1-score/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/f1-score/</guid>
+      <description>from sklearn.metrics import f1_scoretrue = [0, 1, 2, 0, 1, 2] pred = [0, 2, 1, 0, 0, 1]f1_score(true, pred,average=None).mean() 0.26666666666666666  f1_score(true, pred,average=&amp;#34;macro&amp;#34;) 0.26666666666666666  f1_score(true, pred,average=&amp;#34;micro&amp;#34;) 0.3333333333333333  f1_score(true, pred,average=&amp;#34;weighted&amp;#34;) 0.26666666666666666  </description>
+    </item>
+    
+    <item>
+      <title>Matplotlib-notes</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/matplotlib-notes/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/matplotlib-notes/</guid>
+      <description>#1. plotting using matplotlib from matplotlib import pyplot as plt x = [5,2,7] y = [2,16,4] plt.plot(x,y) plt.title(&amp;#39;Info&amp;#39;) plt.ylabel(&amp;#39;Y axis&amp;#39;) plt.xlabel(&amp;#39;X axis&amp;#39;) plt.show() # 2. Styling using matplotlib from matplotlib import style style.use(&amp;#39;ggplot&amp;#39;) x = [5,8,10] y = [12,16,6] x2 = [6,9,11] y2 = [6,15,7] plt.plot(x,y,&amp;#39;g&amp;#39;,label=&amp;#39;line one&amp;#39;, linewidth=5) plt.plot(x2,y2,&amp;#39;c&amp;#39;,label=&amp;#39;line two&amp;#39;,linewidth=5) plt.title(&amp;#39;Epic Info&amp;#39;) plt.ylabel(&amp;#39;Y axis&amp;#39;) plt.xlabel(&amp;#39;X axis&amp;#39;) plt.legend() plt.grid(True,color=&amp;#39;k&amp;#39;) plt.show() # 3. plot using green dots plt.plot([1,2,3,4,5], [1,2,3,4,10], &amp;#39;go&amp;#39;) plt.show()  # 4.</description>
+    </item>
+    
+    <item>
+      <title>Remove_Punctuation</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/remove_punctuation/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/remove_punctuation/</guid>
+      <description>import string import pandas as pdSms_content=[&amp;#39;hi,how are you&amp;#39;,&amp;#39;Iam fine&amp;#39;,&amp;#39;what is it?&amp;#39;] df=pd.DataFrame(Sms_content,columns={&amp;#39;sms&amp;#39;}) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }    sms     0 hi,how are you   1 Iam fine   2 what is it?     def remove_punctuation(text): new_text=&amp;#39;&amp;#39;.join([char for char in text if char not in string.</description>
+    </item>
+    
+    <item>
+      <title>Remove_stopwords</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/remove_stopwords/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/remove_stopwords/</guid>
+      <description>import pandas as pd import nltknltk.download(&amp;#39;stopwords&amp;#39;) [nltk_data] Downloading package stopwords to [nltk_data] /home/aishwarya/nltk_data... [nltk_data] Unzipping corpora/stopwords.zip. True  Sms_content=[&amp;#39;hi,how are you&amp;#39;,&amp;#39;I am fine&amp;#39;,&amp;#39;myself aishwarya?&amp;#39;] df=pd.DataFrame(Sms_content,columns={&amp;#39;sms&amp;#39;}) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }    sms     0 hi,how are you   1 I am fine   2 myself aishwarya?</description>
+    </item>
+    
+    <item>
+      <title>Scipy-notes</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/scipy-notes/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/scipy-notes/</guid>
       <description>import numpy as np # 1. Find cubic root of 27 &amp;amp; 64 using cbrt() function from scipy.special import cbrt cb = cbrt([27, 64]) #print value of cb print(cb)  [3. 4.]  # 2.find permutation of 5, 2 using perm (N, k) function from scipy.special import perm per = perm(5, 2, exact = True) print(per)  20  # 3. Inverse Matrix from scipy import linalg # define square matrix two_d_array = np.</description>
+    </item>
+    
+    <item>
+      <title>Stemmer</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/stemmer/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/stemmer/</guid>
+      <description>import pandas as pd import nltkps = nltk.PorterStemmer()e_words= [&amp;#34;wait&amp;#34;, &amp;#34;waiting&amp;#34;, &amp;#34;waited&amp;#34;, &amp;#34;waits&amp;#34;] for w in e_words: rootWord=ps.stem(w) print(rootWord) wait wait wait wait  </description>
+    </item>
+    
+    <item>
+      <title>Tokenise</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/tokenise/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/tokenise/</guid>
+      <description>import pandas as pd import reSms_content=[&amp;#39;hi,how are you&amp;#39;,&amp;#39;Iam fine&amp;#39;,&amp;#39;what is it?&amp;#39;] df=pd.DataFrame(Sms_content,columns={&amp;#39;sms&amp;#39;}) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }    sms     0 hi,how are you   1 Iam fine   2 what is it?     def tokenize(text): tokens=re.split(&amp;#39;\W+&amp;#39;,text) return tokensdf[&amp;#39;tokenized_text&amp;#39;]=df[&amp;#39;sms&amp;#39;].apply(lambda row : tokenize(row.</description>
+    </item>
+    
+    <item>
+      <title>Unique_elements</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/unique_elements/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/unique_elements/</guid>
+      <description>import pandas as pdlist1 = [&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;A&amp;#39;,&amp;#39;C&amp;#39;] df=pd.DataFrame(list1,columns={&amp;#39;Values&amp;#39;}) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }    Values     0 A   1 B   2 B   3 A   4 C     list(df[&amp;#39;Values&amp;#39;].unique()) [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]  </description>
     </item>
     
     <item>

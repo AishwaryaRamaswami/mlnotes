@@ -3,7 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/matplotlib/</loc>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/confusion_matrix/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/encoding/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/f1-score/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/matplotlib-notes/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/remove_punctuation/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/remove_stopwords/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/scipy-notes/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/stemmer/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/tokenise/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/unique_elements/</loc>
     <lastmod>2020-08-10T00:00:00+00:00</lastmod>
   </url>
   

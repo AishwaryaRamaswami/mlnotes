@@ -16,14 +16,14 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Simple Python" />
+<meta property="og:title" content="F1-Score" />
 <meta property="og:description" content="-" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://AishwaryaRamaswami.github.io/mlnotes/python/basics/simple_python/" /><meta property="article:published_time" content="2019-04-20T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-04-20T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://AishwaryaRamaswami.github.io/mlnotes/python/basics/f1-score/" /><meta property="article:published_time" content="2020-08-10T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2020-08-10T00:00:00&#43;00:00"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Simple Python"/>
+<meta name="twitter:title" content="F1-Score"/>
 <meta name="twitter:description" content="-"/>
 <meta name="generator" content="Hugo 0.50" /> 
     
@@ -32,20 +32,20 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "Simple Python",
-  "url": "https://AishwaryaRamaswami.github.io/mlnotes/python/basics/simple_python/",
-  "wordCount": "6",
-  "datePublished": "2019-04-20T00:00:00&#43;00:00",
-  "dateModified": "2019-04-20T00:00:00&#43;00:00",
+  "headline": "F1-Score",
+  "url": "https://AishwaryaRamaswami.github.io/mlnotes/python/basics/f1-score/",
+  "wordCount": "30",
+  "datePublished": "2020-08-10T00:00:00&#43;00:00",
+  "dateModified": "2020-08-10T00:00:00&#43;00:00",
   "author": {
     "@type": "Person",
-    "name": "TACT"
+    "name": "Aishwarya"
   },
   "description": "-"
 }
 </script> 
 
-    <title>Simple Python</title>
+    <title>F1-Score</title>
 
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -117,19 +117,26 @@ MathJax.Hub.Config({
   <div class="technical_note">
   <header>
       
-    <h1 class="technical_note_title">Simple Python</h1>
+    <h1 class="technical_note_title">F1-Score</h1>
     <div class="technical_note_date">
-      <time datetime=" 2019-04-20T00:00:00Z "> 20 Apr 2019</time>
+      <time datetime=" 2020-08-10T00:00:00Z "> 10 Aug 2020</time>
     </div>
   </header>
   <div class="content">
-  <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s1">&#39;Hello Toronto&#39;</span><span class="p">)</span></code></pre></div>
-<pre><code>Hello Toronto
+  <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">f1_score</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">true</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">pred</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">f1_score</span><span class="p">(</span><span class="n">true</span><span class="p">,</span> <span class="n">pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span></code></pre></div>
+<pre><code>0.26666666666666666
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span></code></pre></div>
-<pre><code>2
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">f1_score</span><span class="p">(</span><span class="n">true</span><span class="p">,</span> <span class="n">pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="s2">&#34;macro&#34;</span><span class="p">)</span></code></pre></div>
+<pre><code>0.26666666666666666
 </code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">f1_score</span><span class="p">(</span><span class="n">true</span><span class="p">,</span> <span class="n">pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="s2">&#34;micro&#34;</span><span class="p">)</span></code></pre></div>
+<pre><code>0.3333333333333333
+</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">f1_score</span><span class="p">(</span><span class="n">true</span><span class="p">,</span> <span class="n">pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="s2">&#34;weighted&#34;</span><span class="p">)</span></code></pre></div>
+<pre><code>0.26666666666666666
+</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"></code></pre></div>
 </div>
   <aside>
       

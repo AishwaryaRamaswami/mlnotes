@@ -70,7 +70,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_4_0.png)
+![png](scipy-notes_4_0.png)
 
 
 
@@ -116,7 +116,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_7_0.png)
+![png](scipy-notes_7_0.png)
 
 
 
@@ -132,7 +132,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_8_0.png)
+![png](scipy-notes_8_0.png)
 
 
 
@@ -272,7 +272,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_14_0.png)
+![png](scipy-notes_14_0.png)
 
 
 
@@ -290,7 +290,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_15_0.png)
+![png](scipy-notes_15_0.png)
 
 
 
@@ -449,7 +449,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_24_0.png)
+![png](scipy-notes_24_0.png)
 
 
 
