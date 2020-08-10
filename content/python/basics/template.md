@@ -1,7 +1,7 @@
 ---
-title: "Template"
-author: "TACT"
-date: 2019-04-20
+title: "List Append"
+author: "Aishwarya"
+date: 2020-08-09
 description: "-"
 type: technical_note
 draft: false
@@ -11,13 +11,7 @@ draft: false
 print('Hello Toronto')
 ```
 
-    Hello Toronto
-
-
 
 ```python
 print(2)
 ```
-
-    2
-
