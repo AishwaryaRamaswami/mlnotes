@@ -6,10 +6,28 @@
     <description>Recent content on Aishwarya</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://AishwaryaRamaswami.github.io/mlnotes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Matplotlib-notes</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/matplotlib/matplotlibexercises/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/matplotlib/matplotlibexercises/</guid>
+      <description>#1. plotting using matplotlib from matplotlib import pyplot as plt x = [5,2,7] y = [2,16,4] plt.plot(x,y) plt.title(&amp;#39;Info&amp;#39;) plt.ylabel(&amp;#39;Y axis&amp;#39;) plt.xlabel(&amp;#39;X axis&amp;#39;) plt.show() # 2. Styling using matplotlib from matplotlib import style style.use(&amp;#39;ggplot&amp;#39;) x = [5,8,10] y = [12,16,6] x2 = [6,9,11] y2 = [6,15,7] plt.plot(x,y,&amp;#39;g&amp;#39;,label=&amp;#39;line one&amp;#39;, linewidth=5) plt.plot(x2,y2,&amp;#39;c&amp;#39;,label=&amp;#39;line two&amp;#39;,linewidth=5) plt.title(&amp;#39;Epic Info&amp;#39;) plt.ylabel(&amp;#39;Y axis&amp;#39;) plt.xlabel(&amp;#39;X axis&amp;#39;) plt.legend() plt.grid(True,color=&amp;#39;k&amp;#39;) plt.show() # 3. plot using green dots plt.plot([1,2,3,4,5], [1,2,3,4,10], &amp;#39;go&amp;#39;) plt.show()  # 4.</description>
+    </item>
+    
+    <item>
+      <title>Scipy-notes</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/scipy/scipy-notes/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/scipy/scipy-notes/</guid>
+      <description>import numpy as np # 1. Find cubic root of 27 &amp;amp; 64 using cbrt() function from scipy.special import cbrt cb = cbrt([27, 64]) #print value of cb print(cb)  [3. 4.]  # 2.find permutation of 5, 2 using perm (N, k) function from scipy.special import perm per = perm(5, 2, exact = True) print(per)  20  # 3. Inverse Matrix from scipy import linalg # define square matrix two_d_array = np.</description>
+    </item>
     
     <item>
       <title>Confusion_Matrix</title>
@@ -63,15 +81,6 @@
       
       <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/remove_stopwords/</guid>
       <description>import pandas as pd import nltknltk.download(&amp;#39;stopwords&amp;#39;) [nltk_data] Downloading package stopwords to [nltk_data] /home/aishwarya/nltk_data... [nltk_data] Unzipping corpora/stopwords.zip. True  Sms_content=[&amp;#39;hi,how are you&amp;#39;,&amp;#39;I am fine&amp;#39;,&amp;#39;myself aishwarya?&amp;#39;] df=pd.DataFrame(Sms_content,columns={&amp;#39;sms&amp;#39;}) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }    sms     0 hi,how are you   1 I am fine   2 myself aishwarya?</description>
-    </item>
-    
-    <item>
-      <title>Scipy-notes</title>
-      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/numpy/scipy-notes/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/numpy/scipy-notes/</guid>
-      <description>import numpy as np # 1. Find cubic root of 27 &amp;amp; 64 using cbrt() function from scipy.special import cbrt cb = cbrt([27, 64]) #print value of cb print(cb)  [3. 4.]  # 2.find permutation of 5, 2 using perm (N, k) function from scipy.special import perm per = perm(5, 2, exact = True) print(per)  20  # 3. Inverse Matrix from scipy import linalg # define square matrix two_d_array = np.</description>
     </item>
     
     <item>

@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/matplotlib/matplotlibexercises/</loc>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/scipy/scipy-notes/</loc>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/confusion_matrix/</loc>
     <lastmod>2020-08-10T00:00:00+00:00</lastmod>
   </url>
@@ -29,11 +39,6 @@
   
   <url>
     <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/remove_stopwords/</loc>
-    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://AishwaryaRamaswami.github.io/mlnotes/python/numpy/scipy-notes/</loc>
     <lastmod>2020-08-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -74,7 +79,7 @@
   
   <url>
     <loc>https://AishwaryaRamaswami.github.io/mlnotes/</loc>
-    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,7 +1,7 @@
 ---
 title: "Scipy-notes"
 author: "Aishwarya"
-date: 2020-08-10
+date: 2020-08-12
 description: "-"
 type: technical_note
 draft: false
