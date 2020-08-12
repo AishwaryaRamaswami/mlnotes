@@ -67,6 +67,15 @@
     
     <item>
       <title>Scipy-notes</title>
+      <link>https://AishwaryaRamaswami.github.io/mlnotes/python/numpy/scipy-notes/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://AishwaryaRamaswami.github.io/mlnotes/python/numpy/scipy-notes/</guid>
+      <description>import numpy as np # 1. Find cubic root of 27 &amp;amp; 64 using cbrt() function from scipy.special import cbrt cb = cbrt([27, 64]) #print value of cb print(cb)  [3. 4.]  # 2.find permutation of 5, 2 using perm (N, k) function from scipy.special import perm per = perm(5, 2, exact = True) print(per)  20  # 3. Inverse Matrix from scipy import linalg # define square matrix two_d_array = np.</description>
+    </item>
+    
+    <item>
+      <title>Scipy-notes</title>
       <link>https://AishwaryaRamaswami.github.io/mlnotes/python/basics/scipy-notes/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       

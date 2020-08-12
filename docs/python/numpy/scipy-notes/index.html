@@ -19,7 +19,7 @@
 <meta property="og:title" content="Scipy-notes" />
 <meta property="og:description" content="-" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://AishwaryaRamaswami.github.io/mlnotes/python/basics/scipy-notes/" /><meta property="article:published_time" content="2020-08-10T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://AishwaryaRamaswami.github.io/mlnotes/python/numpy/scipy-notes/" /><meta property="article:published_time" content="2020-08-10T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2020-08-10T00:00:00&#43;00:00"/>
 
 <meta name="twitter:card" content="summary"/>
@@ -33,8 +33,8 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "Scipy-notes",
-  "url": "https://AishwaryaRamaswami.github.io/mlnotes/python/basics/scipy-notes/",
-  "wordCount": "2111",
+  "url": "https://AishwaryaRamaswami.github.io/mlnotes/python/numpy/scipy-notes/",
+  "wordCount": "2285",
   "datePublished": "2020-08-10T00:00:00&#43;00:00",
   "dateModified": "2020-08-10T00:00:00&#43;00:00",
   "author": {
@@ -355,12 +355,12 @@ math - pi = %.16f 3.141592653589793
 <span class="n">out</span> <span class="o">=</span> <span class="n">odr</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 <span class="c1"># Use the in-built pprint method to give us results.</span>
 <span class="n">out</span><span class="o">.</span><span class="n">pprint</span><span class="p">()</span></code></pre></div>
-<pre><code>Beta: [ 5.42595108 -4.14111339]
-Beta Std Error: [0.77967664 2.33350109]
-Beta Covariance: [[ 1.87386452 -4.68466183]
- [-4.68466183 16.78514723]]
-Residual Variance: 0.32440748047361717
-Inverse Condition #: 0.1464266269832005
+<pre><code>Beta: [ 5.50164166 -4.08205058]
+Beta Std Error: [0.81906501 2.44939456]
+Beta Covariance: [[ 1.93518137 -4.83795363]
+ [-4.83795363 17.30622819]]
+Residual Variance: 0.34666905082624677
+Inverse Condition #: 0.14600021688339102
 Reason(s) for Halting:
   Sum of squares convergence
 </code></pre>
@@ -373,7 +373,7 @@ Reason(s) for Halting:
 <span class="c1">#Now Load the File</span>
 <span class="n">mat_file_content</span> <span class="o">=</span> <span class="n">sio</span><span class="o">.</span><span class="n">loadmat</span><span class="p">(</span><span class="s1">&#39;array.mat&#39;</span><span class="p">)</span>
 <span class="k">print</span> <span class="p">(</span><span class="n">mat_file_content</span><span class="p">)</span></code></pre></div>
-<pre><code>{'__header__': b'MATLAB 5.0 MAT-file Platform: posix, Created on: Thu Aug  6 17:05:31 2020', '__version__': '1.0', '__globals__': [], 'vect': array([[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]])}
+<pre><code>{'__header__': b'MATLAB 5.0 MAT-file Platform: posix, Created on: Wed Aug 12 08:53:46 2020', '__version__': '1.0', '__globals__': [], 'vect': array([[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]])}
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 20.Interpolate</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -710,6 +710,69 @@ Reason(s) for Halting:
 <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="k">print</span> <span class="p">(</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">])))</span></code></pre></div>
+<pre><code>[3. 4.]
+20
+</code></pre>
+
+<p><img src="scipy-notes_27_1.png" alt="png" /></p>
+
+<pre><code>[ 9.+0.j -1.+0.j]
+[[ 0.70710678 -0.5547002 ]
+ [ 0.70710678  0.83205029]]
+[1.e+01 1.e+10]
+</code></pre>
+
+<p><img src="scipy-notes_27_3.png" alt="png" /></p>
+
+<p><img src="scipy-notes_27_4.png" alt="png" /></p>
+
+<pre><code>(9.000000000000002, 9.992007221626411e-14)
+[[-4. ]
+ [ 4.5]]
+
+ Checking results, following vector should be all zeros
+[[0.]
+ [0.]]
+[2 1 2 1]
+[0. 1. 2. 2.]
+[-9999     0     0     1]
+Optimization terminated successfully.
+         Current function value: 0.000000
+         Iterations: 339
+         Function evaluations: 571
+[1. 1. 1. 1. 1.]
+</code></pre>
+
+<p><img src="scipy-notes_27_6.png" alt="png" /></p>
+
+<p><img src="scipy-notes_27_7.png" alt="png" /></p>
+
+<pre><code>sciPy - pi = %.16f 3.141592653589793
+math - pi = %.16f 3.141592653589793
+(6.6446573357e-27, 'kg', 2e-36)
+Beta: [ 5.28412019 -3.40504856]
+Beta Std Error: [0.80475645 2.40547217]
+Beta Covariance: [[ 1.79559089 -4.48897687]
+ [-4.48897687 16.04276191]]
+Residual Variance: 0.36067956366444465
+Inverse Condition #: 0.1457531438934509
+Reason(s) for Halting:
+  Sum of squares convergence
+{'__header__': b'MATLAB 5.0 MAT-file Platform: posix, Created on: Wed Aug 12 08:53:49 2020', '__version__': '1.0', '__globals__': [], 'vect': array([[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]])}
+[0.         0.36363636 0.72727273 1.09090909 1.45454545 1.81818182
+ 2.18181818 2.54545455 2.90909091 3.27272727 3.63636364 4.        ] [-0.65364362 -0.61966189 -0.51077021 -0.31047698 -0.00715476  0.37976236
+  0.76715099  0.99239518  0.85886263  0.27994201 -0.52586509 -0.99582185]
+[ 2. -2.  9.]
+(0.5, 1.7092350012594845e-14)
+-2.0
+</code></pre>
+
+<p><img src="scipy-notes_27_9.png" alt="png" /></p>
+
+<pre><code>[0.84134475 0.15865525 0.5        0.84134475 0.9986501  0.99996833
+ 0.02275013 1.        ]
+</code></pre>
+
 </div>
   <aside>
       
